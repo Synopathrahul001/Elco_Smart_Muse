@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ELCO | Virtual Try-On</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/virtual.css">
+
+</head>
+
+<body>
+
+<!--====================================
+            HEADER
+=====================================-->
+
+<header>
+
+    <div class="logo">
+
+        ELCO
+
+    </div>
+
+    <a href="eye.html">
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+        Back To Eyes
+
+    </a>
+
+</header>
+
+
+<!--====================================
+            HERO
+=====================================-->
+
+<section class="hero">
+
+    <span>
+
+        AI BEAUTY STUDIO
+
+    </span>
+
+    <h1>
+
+        Virtual Eye Makeup Try-On
+
+    </h1>
+
+    <p>
+
+        Experience ELCO's premium eye collection in real time.
+        Upload your photo or use your camera to preview every look before purchasing.
+
+    </p>
+
+</section>
+
+
+<!--====================================
+        TRY ON STUDIO
+=====================================-->
+
+<section class="studio">
+
+    <!-- Left Panel -->
+
+    <div class="controls">
+
+        <h2>
+
+            Eye Products
+
+        </h2>
+
+        <!-- Eyeliner -->
+
+        <div class="control-group">
+
+            <h3>Eyeliner</h3>
+
+            <button>Black</button>
+
+            <button>Brown</button>
+
+            <button>Blue</button>
+
+        </div>
+
+        <!-- Kajal -->
+
+        <div class="control-group">
+
+            <h3>Kajal</h3>
+
+            <button>Classic</button>
+
+            <button>Intense</button>
+
+        </div>
+
+        <!-- Mascara -->
+
+        <div class="control-group">
+
+            <h3>Mascara</h3>
+
+            <button>Volume</button>
+
+            <button>Curl</button>
+
+        </div>
+
+        <!-- Eyeshadow -->
+
+        <div class="control-group">
+
+            <h3>Eyeshadow</h3>
+
+            <button>Nude</button>
+
+            <button>Pink</button>
+
+            <button>Gold</button>
+
+            <button>Smokey</button>
+
+        </div>
+
+    </div>
+
+    <!-- Camera Section -->
+
+<div class="camera-area">
+
+    <div class="camera-box">
+
+        <video
+            id="video"
+            autoplay
+            playsinline>
+        </video>
+
+        <canvas id="canvas"></canvas>
+
+    </div>
+
+    <div class="camera-buttons">
+
+        <button id="startCamera">
+
+            <i class="fa-solid fa-camera"></i>
+
+            Start Camera
+
+        </button>
+
+        <button id="stopCamera">
+
+            <i class="fa-solid fa-camera-rotate-left"></i>
+
+            Stop Camera
+
+        </button>
+
+        <button id="capturePhoto">
+
+            <i class="fa-solid fa-camera-retro"></i>
+
+            Capture
+
+        </button>
+
+        <button id="downloadPhoto">
+
+            <i class="fa-solid fa-download"></i>
+
+            Download
+
+        </button>
+
+        <label class="upload-btn">
+
+            <i class="fa-solid fa-upload"></i>
+
+            Upload Photo
+
+            <input
+                type="file"
+                id="uploadImage"
+                accept="image/*"
+                hidden>
+
+        </label>
+
+    </div>
+
+</div>
+
+    <!-- Right Panel -->
+
+    <div class="tools">
+
+        <h2>
+
+            Beauty Tools
+
+        </h2>
+
+        <button>
+
+            Before / After
+
+        </button>
+
+        <button>
+
+            Reset Look
+
+        </button>
+
+        <button>
+
+            Save Look
+
+        </button>
+
+        <button>
+
+            Download
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!--====================================
+        SHADE SELECTOR
+=====================================-->
+
+<section class="shade-section">
+
+    <h2>
+
+        Choose Shade
+
+    </h2>
+
+    <div class="shade-list">
+
+        <div class="shade black"></div>
+
+        <div class="shade brown"></div>
+
+        <div class="shade blue"></div>
+
+        <div class="shade gold"></div>
+
+        <div class="shade pink"></div>
+
+        <div class="shade silver"></div>
+
+    </div>
+
+</section>
+
+
+<!--====================================
+        FOOTER
+=====================================-->
+
+<footer>
+
+    © 2026 ELCO Cosmetics | Virtual Beauty Studio
+
+</footer>
+
+<script src="js/virtual.js"></script>
+
+</body>
+
+</html>
