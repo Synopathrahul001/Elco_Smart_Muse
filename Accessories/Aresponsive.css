@@ -1,0 +1,502 @@
+/*=========================================================
+                LARGE LAPTOP
+=========================================================*/
+
+@media(max-width:1400px){
+
+.hero{
+
+    gap:50px;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+}
+
+.product-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.category-grid{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+.tools-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.footer-container{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+}
+
+
+/*=========================================================
+                    LAPTOP
+=========================================================*/
+
+@media(max-width:1200px){
+
+section{
+
+    padding:80px 5%;
+
+}
+
+.navbar{
+
+    width:95%;
+
+}
+
+.hero{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-image{
+
+    max-width:550px;
+
+    margin:auto;
+
+}
+
+.stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.category-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.product-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.why-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.tools-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.review-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.brush-collection{
+
+    grid-template-columns:1fr;
+
+}
+
+.travel-section{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/*=========================================================
+                    TABLET
+=========================================================*/
+
+@media(max-width:992px){
+
+.menu-btn{
+
+    display:block;
+
+}
+
+.nav-links{
+
+    position:fixed;
+
+    top:85px;
+
+    left:-100%;
+
+    width:280px;
+
+    height:calc(100vh - 85px);
+
+    background:#fff;
+
+    flex-direction:column;
+
+    padding:40px;
+
+    gap:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+    transition:.4s;
+
+}
+
+.nav-links.active{
+
+    left:0;
+
+}
+
+.nav-icons{
+
+    margin-left:auto;
+
+    margin-right:20px;
+
+}
+
+.hero h1{
+
+    font-size:48px;
+
+}
+
+.section-title h2{
+
+    font-size:40px;
+
+}
+
+.product-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.category-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.tools-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.review-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-container{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+.newsletter-form{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.newsletter-form input{
+
+    width:100%;
+
+    max-width:500px;
+
+}
+
+.newsletter-form button{
+
+    width:250px;
+
+    height:55px;
+
+}
+
+}
+
+
+/*=========================================================
+                    MOBILE
+=========================================================*/
+
+@media(max-width:768px){
+
+section{
+
+    padding:70px 20px;
+
+}
+
+.hero{
+
+    min-height:auto;
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+.shop-btn,
+
+.explore-btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.category-grid{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+.product-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.tools-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.why-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.social-links{
+
+    justify-content:center;
+
+}
+
+.travel-content h2,
+
+.brush-content h2{
+
+    font-size:38px;
+
+}
+
+.newsletter h2{
+
+    font-size:38px;
+
+}
+
+.section-title h2{
+
+    font-size:34px;
+
+}
+
+}
+
+
+/*=========================================================
+                SMALL MOBILE
+=========================================================*/
+
+@media(max-width:480px){
+
+.logo{
+
+    font-size:28px;
+
+}
+
+.nav-icons{
+
+    gap:12px;
+
+    font-size:17px;
+
+}
+
+.hero{
+
+    margin-top:80px;
+
+}
+
+.hero h1{
+
+    font-size:32px;
+
+}
+
+.hero-tag{
+
+    font-size:13px;
+
+}
+
+.section-title h2{
+
+    font-size:28px;
+
+}
+
+.section-title p{
+
+    font-size:14px;
+
+}
+
+.category-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.product-content{
+
+    padding:18px;
+
+}
+
+.product-content h3{
+
+    font-size:20px;
+
+}
+
+.new-price{
+
+    font-size:22px;
+
+}
+
+.review-card{
+
+    padding:25px;
+
+}
+
+.newsletter h2{
+
+    font-size:30px;
+
+}
+
+.newsletter-form input{
+
+    height:52px;
+
+}
+
+.newsletter-form button{
+
+    width:100%;
+
+    height:52px;
+
+}
+
+.footer{
+
+    padding:60px 20px 30px;
+
+}
+
+}
+
