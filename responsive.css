@@ -1,131 +1,272 @@
-/*=========================================
-        LARGE LAPTOPS
-=========================================*/
+/*=========================================================
+                    LARGE LAPTOP
+=========================================================*/
 
-@media(max-width:1200px){
+@media (max-width:1400px){
 
-.hero{
-    gap:40px;
-}
+.contact-hero{
 
-.hero h1{
-    font-size:55px;
-}
-
-.category-grid{
-    grid-template-columns:repeat(3,1fr);
-}
-
-.product-grid{
-    grid-template-columns:repeat(3,1fr);
-}
+    gap:50px;
 
 }
 
-/*=========================================
-            LAPTOP
-=========================================*/
+.hero-content h1{
 
-@media(max-width:992px){
+    font-size:56px;
 
-.nav-links{
-    display:none;
 }
 
-.menu-btn{
-    display:block;
-    font-size:24px;
+.contact-grid{
+
+    grid-template-columns:repeat(4,1fr);
+
 }
 
-.hero{
+.support-grid{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+}
+
+/*=========================================================
+                        LAPTOP
+=========================================================*/
+
+@media (max-width:1200px){
+
+section{
+
+    padding:80px 5%;
+
+}
+
+.contact-hero{
+
     grid-template-columns:1fr;
+
     text-align:center;
+
 }
 
-.hero-content{
-    order:2;
+.hero-buttons{
+
+    justify-content:center;
+
 }
 
 .hero-image{
-    order:1;
+
+    max-width:550px;
+
+    margin:auto;
+
 }
 
-.image-placeholder{
-    width:400px;
-    height:500px;
+.contact-wrapper{
+
+    grid-template-columns:1fr;
+
 }
 
-.hero-btns{
-    justify-content:center;
-}
+.contact-grid{
 
-.category-grid{
     grid-template-columns:repeat(2,1fr);
+
 }
 
-.product-grid{
+.support-grid{
+
     grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-container{
+
+    grid-template-columns:repeat(2,1fr);
+
 }
 
 }
 
-/*=========================================
-            TABLET
-=========================================*/
+/*=========================================================
+                        TABLET
+=========================================================*/
 
-@media(max-width:768px){
+@media (max-width:992px){
+
+.menu-btn{
+
+    display:block;
+
+}
+
+.nav-links{
+
+    position:fixed;
+
+    top:85px;
+
+    left:-100%;
+
+    width:280px;
+
+    height:calc(100vh - 85px);
+
+    background:#fff;
+
+    flex-direction:column;
+
+    padding:40px;
+
+    gap:25px;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.nav-links.active{
+
+    left:0;
+
+}
+
+.hero-content h1{
+
+    font-size:48px;
+
+}
 
 .section-title h2{
-    font-size:34px;
+
+    font-size:40px;
+
 }
 
-.hero h1{
-    font-size:42px;
+.contact-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
 }
 
-.hero p{
-    font-size:15px;
+.support-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.input-row{
+
+    grid-template-columns:1fr;
+
+}
+
+.newsletter-form{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.newsletter-form input{
+
+    width:100%;
+
+    max-width:500px;
+
+}
+
+.newsletter-form button{
+
+    width:240px;
+
+    height:55px;
+
+}
+
+}
+
+/*=========================================================
+                        MOBILE
+=========================================================*/
+
+@media (max-width:768px){
+
+section{
+
+    padding:70px 20px;
+
+}
+
+.contact-hero{
+
+    min-height:auto;
+
+}
+
+.hero-content h1{
+
+    font-size:40px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+.primary-btn,
+
+.secondary-btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.contact-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.support-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.social-links{
+
+    justify-content:center;
+
+}
+
+.contact-form-box{
+
+    padding:30px;
+
 }
 
 .image-placeholder{
-    width:320px;
-    height:420px;
-}
 
-.category-card{
-    padding:25px;
-}
+    height:300px;
 
-.category-card h3{
-    font-size:17px;
-}
-
-.product-image{
-    height:220px;
-}
-
-/* WHY CHOOSE ELCO */
-
-.why-grid{
-    grid-template-columns:repeat(2,1fr);
-}
-
-/* CUSTOMER REVIEWS */
-
-.review-grid{
-    grid-template-columns:repeat(2,1fr);
-}
-/* FAQ */
-
-.faq{
-    width:95%;
-}
-
-/* NEWSLETTER */
-
-.newsletter{
-
-    padding:60px 30px;
+    font-size:20px;
 
 }
 
@@ -135,170 +276,81 @@
 
 }
 
-/* FOOTER */
+.section-title h2{
 
-.footer-container{
-
-    grid-template-columns:repeat(2,1fr);
-    gap:40px;
+    font-size:34px;
 
 }
 
 }
 
-/*=========================================
-            MOBILE
-=========================================*/
+/*=========================================================
+                    SMALL MOBILE
+=========================================================*/
 
-@media(max-width:576px){
-
-.navbar{
-    height:75px;
-}
+@media (max-width:480px){
 
 .logo{
+
     font-size:28px;
+
 }
 
-.hero{
-    margin-top:110px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-    gap:30px;
-    padding:50px 20px;
+.hero-content h1{
+
+    font-size:32px;
+
 }
 
-.hero-content{
-    order:2;
-    width:100%;
+.hero-content p{
+
+    font-size:15px;
+
 }
 
-.hero-image{
-    order:1;
-    width:100%;
-    display:flex;
-    justify-content:center;
+.section-title h2{
+
+    font-size:28px;
+
 }
 
-.hero h1{
-    font-size:42px;
-    line-height:1.15;
-    margin:20px 0 15px;
-}
+.section-title p{
 
-.hero-btns{
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
-}
-
-.btn-primary,
-.btn-outline{
-    width:100%;
-    max-width:260px;
-    text-align:center;
-}
-
-.image-placeholder{
-    width:100%;
-    max-width:380px;
-    height:420px;
-}
-
-.image-placeholder img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
-    display:block;
-}
-
-.category-grid{
-    grid-template-columns:1fr;
-}
-
-.product-grid{
-    grid-template-columns:1fr;
-}
-
-.search-box input{
-    padding:15px;
     font-size:14px;
+
 }
 
-.product-details h3{
-    font-size:20px;
-}
+.contact-card{
 
-.price{
-    font-size:20px;
-}
-
-/* WHY CHOOSE ELCO */
-
-.why-grid{
-    grid-template-columns:1fr;
-}
-
-.why-card{
     padding:30px 20px;
+
 }
 
-.why-card h3{
-    font-size:22px;
+.support-card{
+
+    padding:30px 20px;
+
 }
 
-.why-icon{
-    width:70px;
-    height:70px;
-    font-size:26px;
-}
+.contact-form-box{
 
-/* CUSTOMER REVIEWS */
-
-.review-grid{
-    grid-template-columns:1fr;
-}
-
-.review-card{
     padding:25px;
+
 }
 
-.user-image{
-    width:60px;
-    height:60px;
+.input-group input,
+
+.input-group textarea{
+
+    padding:14px;
+
+    font-size:14px;
+
 }
 
-.stars{
-    font-size:20px;
-}
+.send-btn{
 
-/* FAQ */
-
-.faq-question{
-    padding:20px;
-}
-
-.faq-question h3{
-    font-size:16px;
-    width:90%;
-}
-
-.faq-answer{
-    padding:0 20px;
-}
-
-.faq-question span{
-    font-size:24px;
-}
-
-/* NEWSLETTER */
-
-.newsletter{
-
-    padding:50px 20px;
+    height:52px;
 
 }
 
@@ -308,21 +360,9 @@
 
 }
 
-.newsletter p{
-
-    font-size:15px;
-
-}
-
-.newsletter-form{
-
-    flex-direction:column;
-
-}
-
 .newsletter-form input{
 
-    width:100%;
+    height:52px;
 
 }
 
@@ -330,76 +370,15 @@
 
     width:100%;
 
-}
-
-/* FOOTER */
-
-.footer-container{
-
-    grid-template-columns:1fr;
-    text-align:center;
+    height:52px;
 
 }
 
-.footer-social{
+.footer{
 
-    justify-content:center;
-
-}
-
-.footer-column p i{
-
-    display:block;
-    margin-bottom:8px;
+    padding:60px 20px 30px;
 
 }
 
 }
 
-/*=========================================
-        SMALL MOBILE
-=========================================*/
-
-@media(max-width:400px){
-
-.hero h1{
-    font-size:30px;
-}
-
-.section-title h2{
-    font-size:28px;
-}
-
-.logo{
-    font-size:24px;
-}
-
-.nav-icons{
-    gap:15px;
-}
-
-}
-
-/*====================================
-        VIRTUAL PAGE HEADER
-====================================*/
-
-@media (max-width:576px){
-
-    header{
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        gap:15px;
-        padding:20px;
-    }
-
-    header .logo{
-        font-size:34px;
-    }
-
-    header a{
-        font-size:15px;
-    }
-
-}
